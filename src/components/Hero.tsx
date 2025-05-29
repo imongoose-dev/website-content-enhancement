@@ -22,11 +22,11 @@ const Hero = () => {
           <div className="mb-8">
             <h1 className="font-montserrat text-5xl md:text-7xl font-bold mb-4 leading-tight">
               <span className="block text-white">Симфония</span>
-              <span className="block bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
                 Камня
               </span>
             </h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-purple-700 mx-auto mb-6"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-700 mx-auto mb-6"></div>
           </div>
 
           {/* Description */}
@@ -45,7 +45,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-4 text-lg font-medium border-0"
+              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 text-lg font-medium border-0"
             >
               <Icon name="Phone" size={20} className="mr-2" />
               Получить консультацию
@@ -53,7 +53,7 @@ const Hero = () => {
             <Button
               variant="outline"
               size="lg"
-              className="border-purple-400 text-purple-400 hover:bg-purple-600 hover:text-white hover:border-purple-600 px-8 py-4 text-lg"
+              className="border-blue-400 text-blue-400 hover:bg-blue-600 hover:text-white hover:border-blue-600 px-8 py-4 text-lg"
             >
               <Icon name="Eye" size={20} className="mr-2" />
               Посмотреть работы
@@ -63,7 +63,7 @@ const Hero = () => {
           {/* Features */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-800 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Icon name="Award" size={32} className="text-white" />
               </div>
               <h3 className="font-semibold text-lg mb-2">15+ лет опыта</h3>
@@ -72,7 +72,7 @@ const Hero = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-800 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Icon name="Wrench" size={32} className="text-white" />
               </div>
               <h3 className="font-semibold text-lg mb-2">
@@ -83,7 +83,7 @@ const Hero = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-800 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Icon name="Shield" size={32} className="text-white" />
               </div>
               <h3 className="font-semibold text-lg mb-2">Гарантия качества</h3>
@@ -95,7 +95,7 @@ const Hero = () => {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <Icon name="ChevronDown" size={32} className="text-purple-400/70" />
+        <Icon name="ChevronDown" size={32} className="text-blue-400/70" />
       </div>
     </section>
   );

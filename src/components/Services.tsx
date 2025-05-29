@@ -57,11 +57,11 @@ const Services = () => {
     <section id="services" className="py-20 bg-dark-bg">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-montserrat text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="font-montserrat text-4xl md:text-5xl font-bold text-white mb-4">
             Наши услуги
           </h2>
-          <div className="w-24 h-1 bg-amber-400 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <div className="w-24 h-1 bg-blue-400 mx-auto mb-6"></div>
+          <p className="text-xl text-white max-w-2xl mx-auto">
             Полный спектр услуг по работе с натуральным и искусственным камнем.
             От проектирования до финального монтажа.
           </p>
@@ -74,14 +74,14 @@ const Services = () => {
               className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-0 bg-dark-card text-white"
             >
               <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <Icon
                     name={service.icon as any}
                     size={32}
                     className="text-white"
                   />
                 </div>
-                <CardTitle className="font-montserrat text-xl text-white group-hover:text-amber-400 transition-colors">
+                <CardTitle className="font-montserrat text-xl text-white group-hover:text-blue-400 transition-colors">
                   {service.title}
                 </CardTitle>
               </CardHeader>
@@ -93,7 +93,7 @@ const Services = () => {
                   {service.features.map((feature, featureIndex) => (
                     <div
                       key={featureIndex}
-                      className="text-sm bg-amber-900/30 text-amber-300 px-3 py-1 rounded-full"
+                      className="text-sm bg-blue-900/30 text-blue-300 px-3 py-1 rounded-full"
                     >
                       {feature}
                     </div>
@@ -116,7 +116,7 @@ const Services = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:+79001232343"
-                className="inline-flex items-center justify-center px-6 py-3 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition-colors font-medium"
+                className="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
               >
                 <Icon name="Phone" size={20} className="mr-2" />
                 Позвонить сейчас
