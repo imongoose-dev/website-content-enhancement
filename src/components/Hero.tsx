@@ -11,7 +11,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(44, 44, 44, 0.7), rgba(44, 44, 44, 0.5)), url('https://images.unsplash.com/photo-1615971677499-5467cbab01d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`,
+          backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.8), rgba(30, 41, 59, 0.7)), url('https://images.unsplash.com/photo-1615971677499-5467cbab01d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`,
         }}
       />
 
@@ -22,9 +22,11 @@ const Hero = () => {
           <div className="mb-8">
             <h1 className="font-montserrat text-5xl md:text-7xl font-bold mb-4 leading-tight">
               <span className="block text-white">Симфония</span>
-              <span className="block text-amber-400">Камня</span>
+              <span className="block bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
+                Камня
+              </span>
             </h1>
-            <div className="w-24 h-1 bg-amber-400 mx-auto mb-6"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-purple-700 mx-auto mb-6"></div>
           </div>
 
           {/* Description */}
@@ -43,7 +45,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <Button
               size="lg"
-              className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 text-lg font-medium"
+              className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-4 text-lg font-medium border-0"
             >
               <Icon name="Phone" size={20} className="mr-2" />
               Получить консультацию
@@ -51,7 +53,7 @@ const Hero = () => {
             <Button
               variant="outline"
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg"
+              className="border-purple-400 text-purple-400 hover:bg-purple-600 hover:text-white hover:border-purple-600 px-8 py-4 text-lg"
             >
               <Icon name="Eye" size={20} className="mr-2" />
               Посмотреть работы
@@ -61,8 +63,8 @@ const Hero = () => {
           {/* Features */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
             <div className="text-center">
-              <div className="w-16 h-16 bg-amber-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="Award" size={32} className="text-amber-400" />
+              <div className="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-800 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="Award" size={32} className="text-white" />
               </div>
               <h3 className="font-semibold text-lg mb-2">15+ лет опыта</h3>
               <p className="text-gray-300 text-sm">
@@ -70,8 +72,8 @@ const Hero = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-amber-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="Wrench" size={32} className="text-amber-400" />
+              <div className="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-800 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="Wrench" size={32} className="text-white" />
               </div>
               <h3 className="font-semibold text-lg mb-2">
                 Собственное производство
@@ -81,8 +83,8 @@ const Hero = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-amber-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="Shield" size={32} className="text-amber-400" />
+              <div className="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-800 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="Shield" size={32} className="text-white" />
               </div>
               <h3 className="font-semibold text-lg mb-2">Гарантия качества</h3>
               <p className="text-gray-300 text-sm">Надёжность на десятилетия</p>
@@ -93,7 +95,7 @@ const Hero = () => {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <Icon name="ChevronDown" size={32} className="text-white/70" />
+        <Icon name="ChevronDown" size={32} className="text-purple-400/70" />
       </div>
     </section>
   );
