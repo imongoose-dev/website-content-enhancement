@@ -31,7 +31,7 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <a
-              href="#hero"
+              href="/"
               className="text-gray-700 hover:text-amber-600 transition-colors"
             >
               Главная
@@ -43,19 +43,19 @@ const Header = () => {
               Услуги
             </a>
             <a
-              href="#gallery"
+              href="/gallery"
               className="text-gray-700 hover:text-amber-600 transition-colors"
             >
               Галерея
             </a>
             <a
-              href="#catalog"
+              href="/catalog"
               className="text-gray-700 hover:text-amber-600 transition-colors"
             >
               Каталог
             </a>
             <a
-              href="#contacts"
+              href="/contacts"
               className="text-gray-700 hover:text-amber-600 transition-colors"
             >
               Контакты
@@ -97,7 +97,7 @@ const Header = () => {
           <div className="md:hidden py-4 border-t bg-white">
             <nav className="flex flex-col space-y-3">
               <a
-                href="#hero"
+                href="/"
                 className="px-4 py-2 text-gray-700 hover:text-amber-600 hover:bg-gray-50 rounded-lg transition-colors"
               >
                 Главная
@@ -109,19 +109,19 @@ const Header = () => {
                 Услуги
               </a>
               <a
-                href="#gallery"
+                href="/gallery"
                 className="px-4 py-2 text-gray-700 hover:text-amber-600 hover:bg-gray-50 rounded-lg transition-colors"
               >
                 Галерея
               </a>
               <a
-                href="#catalog"
+                href="/catalog"
                 className="px-4 py-2 text-gray-700 hover:text-amber-600 hover:bg-gray-50 rounded-lg transition-colors"
               >
                 Каталог
               </a>
               <a
-                href="#contacts"
+                href="/contacts"
                 className="px-4 py-2 text-gray-700 hover:text-amber-600 hover:bg-gray-50 rounded-lg transition-colors"
               >
                 Контакты
