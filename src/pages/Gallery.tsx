@@ -71,7 +71,7 @@ const Gallery = () => {
       : projects.filter((project) => project.category === selectedCategory);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-dark-bg">
       <Header />
 
       {/* Hero Section */}
@@ -89,7 +89,7 @@ const Gallery = () => {
       </section>
 
       {/* Filter Categories */}
-      <section className="py-12">
+      <section className="py-12 bg-dark-bg">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             {categories.map((category) => (
@@ -99,7 +99,7 @@ const Gallery = () => {
                 className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                   selectedCategory === category.id
                     ? "bg-amber-600 text-white shadow-lg"
-                    : "bg-white text-gray-700 hover:bg-amber-50 border border-gray-200"
+                    : "bg-dark-card text-gray-300 hover:bg-amber-900/20 border border-dark-border"
                 }`}
               >
                 {category.name}
@@ -112,7 +112,7 @@ const Gallery = () => {
             {filteredProjects.map((project) => (
               <Card
                 key={project.id}
-                className="group overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0"
+                className="group overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 bg-dark-card"
               >
                 <div className="relative overflow-hidden">
                   <img
@@ -125,10 +125,10 @@ const Gallery = () => {
                   </div>
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="font-montserrat text-xl font-bold text-gray-900 mb-2">
+                  <h3 className="font-montserrat text-xl font-bold text-white mb-2">
                     {project.title}
                   </h3>
-                  <p className="text-gray-600">{project.description}</p>
+                  <p className="text-gray-300">{project.description}</p>
                 </CardContent>
               </Card>
             ))}

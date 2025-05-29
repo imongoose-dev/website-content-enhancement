@@ -54,7 +54,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-gray-50">
+    <section id="services" className="py-20 bg-dark-bg">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-montserrat text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -71,7 +71,7 @@ const Services = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-0 bg-white"
+              className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-0 bg-dark-card text-white"
             >
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -81,19 +81,19 @@ const Services = () => {
                     className="text-white"
                   />
                 </div>
-                <CardTitle className="font-montserrat text-xl text-gray-900 group-hover:text-amber-600 transition-colors">
+                <CardTitle className="font-montserrat text-xl text-white group-hover:text-amber-400 transition-colors">
                   {service.title}
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-center">
-                <CardDescription className="text-gray-600 mb-6 leading-relaxed">
+                <CardDescription className="text-gray-300 mb-6 leading-relaxed">
                   {service.description}
                 </CardDescription>
                 <div className="grid grid-cols-2 gap-2">
                   {service.features.map((feature, featureIndex) => (
                     <div
                       key={featureIndex}
-                      className="text-sm bg-amber-50 text-amber-700 px-3 py-1 rounded-full"
+                      className="text-sm bg-amber-900/30 text-amber-300 px-3 py-1 rounded-full"
                     >
                       {feature}
                     </div>
@@ -105,11 +105,11 @@ const Services = () => {
         </div>
 
         <div className="text-center mt-16">
-          <div className="bg-white rounded-2xl p-8 shadow-lg max-w-4xl mx-auto">
-            <h3 className="font-montserrat text-2xl font-bold text-gray-900 mb-4">
+          <div className="bg-dark-card rounded-2xl p-8 shadow-lg max-w-4xl mx-auto border border-dark-border">
+            <h3 className="font-montserrat text-2xl font-bold text-white mb-4">
               Готовы обсудить ваш проект?
             </h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-300 mb-6">
               Получите бесплатную консультацию и расчёт стоимости. Наши
               специалисты помогут выбрать оптимальное решение.
             </p>
@@ -123,7 +123,7 @@ const Services = () => {
               </a>
               <a
                 href="#contacts"
-                className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors font-medium"
+                className="inline-flex items-center justify-center px-6 py-3 border border-dark-border text-gray-300 rounded-lg hover:bg-dark-border hover:text-white transition-colors font-medium"
               >
                 <Icon name="MessageCircle" size={20} className="mr-2" />
                 Написать нам

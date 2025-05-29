@@ -96,7 +96,7 @@ const Catalog = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-dark-bg">
       <Header />
 
       {/* Hero Section */}
@@ -113,10 +113,10 @@ const Catalog = () => {
       </section>
 
       {/* Materials Section */}
-      <section className="py-20">
+      <section className="py-20 bg-dark-bg">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-white mb-4">
               Материалы
             </h2>
             <div className="w-24 h-1 bg-amber-400 mx-auto mb-6"></div>
@@ -126,7 +126,7 @@ const Catalog = () => {
             {materials.map((material, index) => (
               <Card
                 key={index}
-                className="overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                className="overflow-hidden hover:shadow-xl transition-shadow duration-300 bg-dark-card border border-dark-border"
               >
                 <div className="relative">
                   <img
@@ -139,10 +139,10 @@ const Catalog = () => {
                   </div>
                 </div>
                 <CardHeader>
-                  <CardTitle className="font-montserrat text-2xl text-gray-900">
+                  <CardTitle className="font-montserrat text-2xl text-white">
                     {material.name}
                   </CardTitle>
-                  <p className="text-gray-600">{material.description}</p>
+                  <p className="text-gray-300">{material.description}</p>
                 </CardHeader>
                 <CardContent>
                   <div className="grid grid-cols-2 gap-2 mb-4">
@@ -166,7 +166,7 @@ const Catalog = () => {
 
           {/* Products Section */}
           <div className="text-center mb-16">
-            <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-white mb-4">
               Изделия
             </h2>
             <div className="w-24 h-1 bg-amber-400 mx-auto mb-6"></div>
@@ -176,7 +176,7 @@ const Catalog = () => {
             {products.map((product, index) => (
               <Card
                 key={index}
-                className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-dark-card border border-dark-border"
               >
                 <div className="relative overflow-hidden">
                   <img
@@ -186,17 +186,17 @@ const Catalog = () => {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="font-montserrat text-lg text-gray-900">
+                  <CardTitle className="font-montserrat text-lg text-white">
                     {product.name}
                   </CardTitle>
-                  <p className="text-sm text-gray-600">{product.description}</p>
+                  <p className="text-sm text-gray-300">{product.description}</p>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-2">
                     {product.features.map((feature, featureIndex) => (
                       <div
                         key={featureIndex}
-                        className="flex items-center text-sm text-gray-600"
+                        className="flex items-center text-sm text-gray-300"
                       >
                         <Icon
                           name="Check"

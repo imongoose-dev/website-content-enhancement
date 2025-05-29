@@ -56,6 +56,9 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        "dark-bg": "rgb(10, 25, 36)",
+        "dark-card": "rgb(15, 32, 46)",
+        "dark-border": "rgb(25, 42, 56)",
         purple: {
           50: "#faf7ff",
           100: "#f3edff",

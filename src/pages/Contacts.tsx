@@ -34,7 +34,7 @@ const Contacts = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-dark-bg">
       <Header />
 
       {/* Hero Section */}
@@ -51,19 +51,19 @@ const Contacts = () => {
       </section>
 
       {/* Contact Information */}
-      <section className="py-20">
+      <section className="py-20 bg-dark-bg">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Cards */}
             <div className="space-y-6">
-              <h2 className="font-montserrat text-3xl font-bold text-gray-900 mb-8">
+              <h2 className="font-montserrat text-3xl font-bold text-white mb-8">
                 Как с нами связаться
               </h2>
 
               {contactInfo.map((contact, index) => (
                 <Card
                   key={index}
-                  className="hover:shadow-lg transition-shadow duration-300"
+                  className="hover:shadow-lg transition-shadow duration-300 bg-dark-card border border-dark-border"
                 >
                   <CardContent className="p-6">
                     <div className="flex items-center space-x-4">
@@ -75,7 +75,7 @@ const Contacts = () => {
                         />
                       </div>
                       <div>
-                        <h3 className="font-montserrat text-lg font-semibold text-gray-900 mb-1">
+                        <h3 className="font-montserrat text-lg font-semibold text-white mb-1">
                           {contact.title}
                         </h3>
                         {contact.link ? (
@@ -86,7 +86,7 @@ const Contacts = () => {
                             {contact.value}
                           </a>
                         ) : (
-                          <p className="text-gray-600">{contact.value}</p>
+                          <p className="text-gray-300">{contact.value}</p>
                         )}
                       </div>
                     </div>
@@ -95,9 +95,9 @@ const Contacts = () => {
               ))}
 
               {/* Social Links */}
-              <Card className="mt-8">
+              <Card className="mt-8 bg-dark-card border border-dark-border">
                 <CardHeader>
-                  <CardTitle className="font-montserrat text-xl text-gray-900">
+                  <CardTitle className="font-montserrat text-xl text-white">
                     Мы в социальных сетях
                   </CardTitle>
                 </CardHeader>
@@ -132,43 +132,53 @@ const Contacts = () => {
 
             {/* Contact Form */}
             <div>
-              <Card className="shadow-xl">
+              <Card className="shadow-xl bg-dark-card border border-dark-border">
                 <CardHeader>
-                  <CardTitle className="font-montserrat text-2xl text-gray-900">
+                  <CardTitle className="font-montserrat text-2xl text-white">
                     Напишите нам
                   </CardTitle>
-                  <p className="text-gray-600">
+                  <p className="text-gray-300">
                     Оставьте заявку и мы свяжемся с вами в течение часа
                   </p>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                      <label className="block text-sm font-medium text-gray-300 mb-2">
                         Имя *
                       </label>
-                      <Input placeholder="Ваше имя" />
+                      <Input
+                        placeholder="Ваше имя"
+                        className="bg-dark-bg border-dark-border text-white"
+                      />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                      <label className="block text-sm font-medium text-gray-300 mb-2">
                         Телефон *
                       </label>
-                      <Input placeholder="+7 (___) ___-__-__" />
+                      <Input
+                        placeholder="+7 (___) ___-__-__"
+                        className="bg-dark-bg border-dark-border text-white"
+                      />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-gray-300 mb-2">
                       Email
                     </label>
-                    <Input placeholder="your@email.com" type="email" />
+                    <Input
+                      placeholder="your@email.com"
+                      type="email"
+                      className="bg-dark-bg border-dark-border text-white"
+                    />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-gray-300 mb-2">
                       Тип услуги
                     </label>
-                    <select className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500">
+                    <select className="w-full px-3 py-2 border border-dark-border rounded-md bg-dark-bg text-white focus:outline-none focus:ring-2 focus:ring-amber-500">
                       <option>Выберите услугу</option>
                       <option>Столешницы</option>
                       <option>Подоконники</option>
@@ -179,12 +189,13 @@ const Contacts = () => {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-gray-300 mb-2">
                       Сообщение
                     </label>
                     <Textarea
                       placeholder="Расскажите о вашем проекте..."
                       rows={4}
+                      className="bg-dark-bg border-dark-border text-white"
                     />
                   </div>
 
@@ -193,7 +204,7 @@ const Contacts = () => {
                     Отправить заявку
                   </Button>
 
-                  <p className="text-sm text-gray-500 text-center">
+                  <p className="text-sm text-gray-400 text-center">
                     Нажимая кнопку, вы соглашаетесь с обработкой персональных
                     данных
                   </p>
@@ -204,20 +215,20 @@ const Contacts = () => {
 
           {/* Map Section */}
           <div className="mt-20">
-            <h2 className="font-montserrat text-3xl font-bold text-gray-900 text-center mb-8">
+            <h2 className="font-montserrat text-3xl font-bold text-white text-center mb-8">
               Как нас найти
             </h2>
-            <div className="bg-gray-300 rounded-lg h-96 flex items-center justify-center">
+            <div className="bg-dark-card border border-dark-border rounded-lg h-96 flex items-center justify-center">
               <div className="text-center">
                 <Icon
                   name="MapPin"
                   size={48}
                   className="text-gray-500 mx-auto mb-4"
                 />
-                <p className="text-gray-600 text-lg">
+                <p className="text-gray-300 text-lg">
                   Интерактивная карта будет добавлена
                 </p>
-                <p className="text-gray-500">
+                <p className="text-gray-400">
                   г. Омск, ул. Производственная, 15
                 </p>
               </div>
